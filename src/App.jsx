@@ -1,10 +1,9 @@
-import React from "react";
-import TimerC from "./components/timerC.jsx";
+import Timer2 from "./components/timer2.jsx";
 
 const App = () => {
   return (
     <>
-      <TimerC />
+      <Timer2 />
     </>
   );
 };
