@@ -18,3 +18,13 @@
   font-size: 85px;
   padding: 10px;
 }
+@media screen and (max-width: 640px) {
+  .clock{
+    font-size: 75x;
+  }
+}
+@media screen and (max-width: 480px) {
+  .clock{
+    font-size: 55px;
+  }
+}
