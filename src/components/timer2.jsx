@@ -52,29 +52,32 @@ const Timer2 = () => {
   const format = (num)=> num.toString().padStart(2, "0");
   return (
     <>
-      <div className="flex-column min-h-screen flex items-center justify-center bg-gray-900">
-        <div className="shadow-xl rounded-3xl flex-column justify-center items-center h-55 p-8 bg-gray-800 border-2 border-gray-700">
-          <div className="flex justify-center text-8xl font-mono">
+      <div className="flex-column min-h-screen flex items-center justify-center bg-gray-900 p-4">
+        <div className="shadow-xl rounded-3xl flex-column justify-center items-center w-full max-w-md p-4 sm:p-8 bg-gray-800 border-2 border-gray-700">
+          <div className="flex justify-center text-4xl sm:text-6xl md:text-8xl font-mono">
             <h1 className="clock text-green-500 drop-shadow-[0_0_8px_rgba(34,197,94,0.5)]">
               {format(hour)}:{format(min)}:{format(secs)}
             </h1>
           </div>
-          <div className="flex justify-center text-2xl">
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4 mt-4">
             <button
-              className="rounded-xl px-6 mx-4 my-3 py-2 bg-sky-600 hover:bg-sky-700 text-white font-semibold transition-colors"
-              onClick={handleStart} ref={colRef1}
+              className="w-full sm:w-auto rounded-xl px-4 sm:px-6 py-2 bg-sky-600 hover:bg-sky-700 text-white font-semibold transition-colors text-lg sm:text-xl"
+              onClick={handleStart}
+              ref={colRef1}
             >
               Start
             </button>
             <button
-              className="rounded-xl px-6 mx-4 my-3 py-2 bg-red-600 hover:bg-red-700 text-white font-semibold transition-colors"
-              onClick={handleStop} ref={colRef2}
+              className="w-full sm:w-auto rounded-xl px-4 sm:px-6 py-2 bg-red-600 hover:bg-red-700 text-white font-semibold transition-colors text-lg sm:text-xl"
+              onClick={handleStop}
+              ref={colRef2}
             >
               Stop
             </button>
             <button
-              className="rounded-xl px-6 mx-4 my-3 py-2 bg-amber-500 hover:bg-amber-600 text-white font-semibold transition-colors"
-              onClick={handleReset} ref={colRef3}
+              className="w-full sm:w-auto rounded-xl px-4 sm:px-6 py-2 bg-amber-500 hover:bg-amber-600 text-white font-semibold transition-colors text-lg sm:text-xl"
+              onClick={handleReset}
+              ref={colRef3}
             >
               Reset
             </button>
