@@ -14,22 +14,22 @@ const Timer2 = () => {
       setSeconds((prev) => prev + 1);
     }, 1000);
     colRef1.current.style.backgroundColor = "#3e82f0";
-    colRef2.current.style.backgroundColor = "#851515";
+    colRef2.current.style.backgroundColor = "red";
     colRef3.current.style.backgroundColor = "#757d1e";
     colRef1.current.style.color = "white";
-    colRef2.current.style.color = "#828281";
+    colRef2.current.style.color = "white";
     colRef3.current.style.color = "#828281";
   };
   const handleStop = () => {
     clearInterval(intervalRef.current);
     intervalRef.current = null;
 
-    colRef1.current.style.backgroundColor = "#1e417d";
-    colRef2.current.style.backgroundColor = "red";
-    colRef3.current.style.backgroundColor = "#757d1e";
-    colRef1.current.style.color = "#828281";
-    colRef2.current.style.color = "white";
-    colRef3.current.style.color = "#828281";
+    colRef1.current.style.backgroundColor = "#3e82f0";
+    colRef2.current.style.backgroundColor = "#851515";
+    colRef3.current.style.backgroundColor = "#a7ba18";
+    colRef1.current.style.color = "White";
+    colRef2.current.style.color = "#828281";
+    colRef3.current.style.color = "White";
   };
   const handleReset = () => {
     handleStop();
